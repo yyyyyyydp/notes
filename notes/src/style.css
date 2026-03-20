@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Fira Sans', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #FAF5FF;
+}
+
+.prose pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.prose code {
+  font-family: 'Fira Code', monospace;
+  background-color: #f3e8ff;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: #4C1D95;
+  font-weight: 600;
+}
+
+.prose a {
+  color: #7C3AED;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: #9333EA;
+}
+
+.prose blockquote {
+  border-left: 4px solid #A78BFA;
+  padding-left: 1rem;
+  color: #6B21A8;
+  font-style: italic;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.25rem 0;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+
+.markdown-body {
+  line-height: 1.8;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-dark {
+    background: rgba(76, 29, 149, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+  }
+}
